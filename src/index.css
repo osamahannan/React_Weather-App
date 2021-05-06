@@ -1,13 +1,99 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'montseratt',sans-serif;
+  /*background-image: url('./assests/wallpaper.jpg');*/
+  background-color: grey;
+}
+.App {
+  background-image:url('./assests/image1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content:center;
+  margin: auto;
+  width: 720px;
+  height: 100vh;
+}
+.info {
+  width: 100%;
+  height: 100vh;
+  padding: 25px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.info .search-box {
+  display: block;
+  width: 100%;
+  margin: 0 0 75px;
+}
+.info .search-box .search-bar {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 0px 16px 0px;
+  margin-top: -10px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+.info .search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.info .location-box .location{
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.info .location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin: 10px 0px -10px; 
+  font-style: italic;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+.info .weather-box {
+  text-align: center;
+}
+.info .weather-box .temp{
+  position: relative;
+  display:inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+.info .weather-box .temp-minmax {
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.info .not-found {
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+
+
