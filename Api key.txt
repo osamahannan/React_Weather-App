@@ -1,0 +1,9 @@
+api.openweathermap.org/data/2.5/weather?q={city name}&appid=b76a25cbcbe3930a8f3fd74f611ebefc
+
+
+
+http://api.openweathermap.org/data/2.5/weather?q=lucknow&units=metric&appid=b76a25cbcbe3930a8f3fd74f611ebefc
+
+
+
+{"coord":{"lon":80.9167,"lat":26.85},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50d"}],"base":"stations","main":{"temp":34,"feels_like":38.06,"temp_min":34,"temp_max":34,"pressure":1003,"humidity":49},"visibility":5000,"wind":{"speed":3.6,"deg":70},"clouds":{"all":29},"dt":1620213982,"sys":{"type":1,"id":9176,"country":"IN","sunrise":1620172508,"sunset":1620220251},"timezone":19800,"id":1264733,"name":"Lucknow","cod":200}
