@@ -8,22 +8,21 @@ body {
   background-color: grey;
 }
 .App {
-  background-position: center;
-  background-repeat: no-repeat;
-  justify-content:center;
-  margin: auto;
+  display: flex;
 }
 .info {
+  display: flex;
+  flex-direction: column;
   background-image:url('./assets/image1.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  justify-content:center;
   background-size: cover;
   margin: auto;
-  width: 720px;
+  width: 450px;
   height: 100vh;
   padding: 25px;
   transition: 0.4s ease-out;
+  flex-wrap: wrap;
 }
 .info.cold {
   background-image:url('./assets/image2.jpg');
@@ -32,7 +31,7 @@ body {
   background-image:url('./assets/about2.jpg');
 }
 .info .search-box {
-  display: block;
+  display: flex;
   width: 100%;
   margin: 0 0 75px;
 }
