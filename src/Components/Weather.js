@@ -13,6 +13,9 @@ const Weather = () => {
             fetch(url)
                 .then(res => {
                     if(!res.ok)
+                    {
+                        console.log(res);
+                        message=-1;
                     throw Error('No Data Found');
                     return res.json();
                 })
