@@ -42,7 +42,7 @@ const Weather = () => {
                 {!city ?
                     (
                         <>
-                            <div className="not-found">Invalid City Name</div>
+                            <div className="not-found">Oops! Invalid City Name</div>
                         </>
                     ) :
                     (
