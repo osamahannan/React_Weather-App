@@ -5,18 +5,12 @@ const Weather = () => {
     const [search, setSearch] = useState("Lucknow");
     const [country, setCountry] = useState("IN");
     const [weather, setWeather] = useState("");
-    
 
     useEffect(() => {
         const fetchApi = () => {
             const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=b76a25cbcbe3930a8f3fd74f611ebefc`
             fetch(url)
                 .then(res => {
-                    if(!res.ok)
-                    {
-                        console.log(res);
-                        message=-1;
-                    throw Error('No Data Found');
                     return res.json();
                 })
                 .then(data => {
@@ -25,7 +19,7 @@ const Weather = () => {
                     setWeather(data.weather);
                 })
                 .catch(e => {
-                    console.log(e.message);
+                    console.log("e.message");
                 })
         }
         fetchApi();
@@ -36,14 +30,15 @@ const Weather = () => {
 
     return (
         <>
-            <div className={(city!=null && weather) ? (weather[0].main==='Rain'? 'info rain':((city.temp < 16) ? 'info' : 'info cold')) : 'info'}>
+            <div className={(city != null && weather) ? (weather[0].main === 'Rain' ? 'info rain' : ((city.temp < 16) ? 'info' : 'info cold')) : 'info'}>
                 <div className="search-box">
                     <input
                         type="text"
                         className="search-bar"
                         placeholder="Search for a city..."
-                        onChange={(event) => { setSearch(event.target.value) }} />
+                        onChange={(e) => { setSearch(e.target.value) }} />  
                 </div>
+
                 {!city ?
                     (
                         <>
