@@ -8,7 +8,7 @@ const Weather = () => {
 
     useEffect(() => {
         const fetchApi = () => {
-            const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=b76a25cbcbe3930a8f3fd74f611ebefc`
+            const url = `//api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=b76a25cbcbe3930a8f3fd74f611ebefc`
             fetch(url)
                 .then(res => {
                     return res.json();
